@@ -34,10 +34,9 @@
   color: var(--primary-color);
 }
 
-ul {
+.audienceList ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 li {
