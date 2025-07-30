@@ -39,10 +39,9 @@
   padding: 0;
 }
 
-li {
+.audiencelist li {
   margin-bottom: 0.5rem;
   padding-left: 1.25rem;
-  position: relative;
 }
 
 li::before {
