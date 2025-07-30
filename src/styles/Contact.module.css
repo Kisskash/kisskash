@@ -1,0 +1,43 @@
+/*
+  Styles for the Contact section and its form. Inputs and text areas
+  share consistent styling, and the confirmation message appears in a
+  friendly colour.
+*/
+
+.form {
+  max-width: 600px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+input,
+textarea {
+  margin-top: 0.25rem;
+  padding: 0.75rem;
+  border: 1px solid #d4cfc8;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(179, 10, 84, 0.2);
+}
+
+.confirm {
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}

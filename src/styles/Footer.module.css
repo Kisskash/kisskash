@@ -1,0 +1,29 @@
+/*
+  Styles for the site footer. It separates itself from the rest of the
+  content with a top border and aligns text and links responsively.
+*/
+
+.footer {
+  border-top: 1px solid #e9e1d9;
+  padding: 2rem 0;
+  background-color: var(--secondary-color);
+  font-size: 0.875rem;
+  color: var(--accent-color);
+}
+
+.links {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.links a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.links a:hover,
+.links a:focus {
+  text-decoration: underline;
+}
