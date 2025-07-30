@@ -29,8 +29,8 @@
   font-family: var(--font-sans);
 }
 
-input:focus,
-textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(179, 10, 84, 0.2);
