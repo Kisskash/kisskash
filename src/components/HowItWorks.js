@@ -1,5 +1,3 @@
-import styles from '../styles/HowItWorks.module.css';
-
 /**
  * HowItWorks (CommentÇaMarche) section explains the four simple steps
  * required to use KissKash. Each step has an emoji illustrating the
@@ -34,15 +32,18 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how" className={`section alt`}>
+    <section id="how" className="section alt">
       <div className="container">
         <h2>Comment ça marche&nbsp;?</h2>
-        <div className={styles.grid}>
+        <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.icon}>{step.icon}</div>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
+            <div
+              key={index}
+              className="bg-secondary rounded-lg p-8 text-center shadow transition-transform hover:-translate-y-1"
+            >
+              <div className="text-[2.5rem] mb-4 text-primary">{step.icon}</div>
+              <h3 className="mb-2 text-primary text-xl">{step.title}</h3>
+              <p className="m-0">{step.description}</p>
             </div>
           ))}
         </div>
