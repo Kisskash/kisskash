@@ -1,5 +1,3 @@
-import styles from '../styles/Hero.module.css';
-
 /**
  * Hero section introducing the product with a compelling headline, a short
  * description and a call‑to‑action button. The background illustrates
@@ -7,9 +5,12 @@ import styles from '../styles/Hero.module.css';
  */
 export default function Hero() {
   return (
-    <section id="hero" className={`${styles.hero} section`}>
-      <div className={styles.overlay}></div>
-      <div className="container">
+    <section
+      id="hero"
+      className="relative section text-center text-secondary bg-[url('/hero-bg.png')] bg-cover bg-center"
+    >
+      <div className="absolute inset-0 bg-primary/65 z-0"></div>
+      <div className="container relative z-10 py-24">
         <h1>La cagnotte physique&nbsp;… qui passe au QR code</h1>
         <p>
           Avec KissKash, transformez chaque événement en une expérience simple,
