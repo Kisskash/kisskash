@@ -19,8 +19,9 @@ export default function Hero() {
           href="https://www.lydia-app.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.ctaButton}
         >
-          <button>Créer ma cagnotte</button>
+          Créer ma cagnotte
         </a>
       </div>
     </section>
