@@ -36,7 +36,7 @@ export default function Audience() {
             <div key={index} className={styles.card}>
               <div className={styles.icon}>{cat.icon}</div>
               <h3>{cat.title}</h3>
-              <ul>
+              <ul className={styles.audienceList}>
                 {cat.items.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}
